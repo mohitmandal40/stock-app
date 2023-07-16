@@ -1,0 +1,93 @@
+.header {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  padding-inline: 2rem;
+}
+
+.currentPrice {
+  margin-bottom: 2rem;
+  padding-inline: 2rem;
+}
+
+.rightArrowIcon {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #c1c6c6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.stockSymbol {
+  font-weight: 600;
+}
+
+.stockName {
+  color: #c1c6c6;
+  font-size: 0.7rem;
+  font-weight: regular;
+}
+
+.stockPrice {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.returns {
+  font-size: 0.8rem;
+  color: #95c474;
+  font-weight: 700;
+}
+
+.chartContainer {
+  margin-bottom: 2rem;
+}
+
+.circleOutlineContainer {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #c1c6c6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  background-color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.duration {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-inline: 2rem;
+}
+
+.active {
+  background-color: #000000;
+  color: #fff;
+}
+/*  */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4rem;
+}
+
+.footerButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerButtonText {
+  font-size: 0.5rem;
+  font-weight: 600;
+}

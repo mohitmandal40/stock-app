@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import StockList from "./pages/StockList";
+import StockDetails from "./pages/StockDetails";
+import Layout from "./components/common/Layout";
+import News from "./pages/News";
 
 function App() {
+  const RedirectToStock = () => <Navigate to="/stock" replace />;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="" element={<RedirectToStock />} />
+          <Route path="stock" element={<StockList />} />
+          <Route path="stock/:symbol" element={<StockDetails />} />
+          <Route path="news" element={<News />} />
+          <Route path="*" element={<RedirectToStock />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,0 +1,20 @@
+.chartContainer {
+  width: 100%;
+}
+
+.crossHair {
+  background: white;
+  border-radius: 5px;
+  color: black;
+  transform: translateX(-0.5px);
+  border-right: dashed 1px #b9c1c8;
+  margin-top: 16px;
+  padding: 6px;
+  width: 80px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px 0px,
+    rgba(0, 0, 0, 0.14) 0px 0px 3px 0px;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  line-height: 16px;
+}

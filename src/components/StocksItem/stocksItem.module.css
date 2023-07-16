@@ -1,0 +1,47 @@
+.stockItem {
+  display: grid;
+  cursor: pointer;
+  grid-template-columns: 1.2fr 1fr 1.2fr;
+  padding: 1rem 1.6rem;
+  align-items: center;
+  grid-column-gap: 0.4rem;
+  border-bottom: 1px solid #f4f3f5;
+}
+
+.stockTextContainer {
+  overflow: hidden;
+}
+
+.stockSymbol {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stockName {
+  font-size: 0.7rem;
+  color: #c1c6c6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stockChart {
+  display: flex;
+  justify-content: center;
+}
+
+.stockSymbol,
+.stockCurrentPrice {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.stockCurrentPrice,
+.percentageGain {
+  text-align: right;
+}
+
+.percentageGain {
+  font-size: 0.7rem;
+}

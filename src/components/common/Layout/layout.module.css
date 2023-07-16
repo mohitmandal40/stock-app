@@ -1,0 +1,10 @@
+.layout {
+  width: 300px;
+  height: 650px;
+  background-color: #fff;
+  border-radius: 2rem;
+  display: grid;
+  grid-template-rows: 3fr 0.3fr;
+  grid-row-gap: 1rem;
+  overflow: hidden;
+}
